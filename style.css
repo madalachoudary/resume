@@ -1,20 +1,33 @@
+table,tr,td{
+  border: 2px solid #000;
+  border-collapse: collapse;
+  margin:3px;
+}
+
+
+
+
 .main{
 /* flex system */
   display:flex;
-   flex-direction:row;
+   /* 0.flex-wrap: wrap; */
+}
+flex-direction:row;
 }
 .left{
   width:25%;
   background-color:#999;
   border:5px solid #fff;
+  flex:1;
   margin:5px;
-  padding:6px;
+  padding:6px;2
   /* background-image:url(); */
 }
 .right{
   width:70%;
   background-color:#666;
   border:5px 4px 5px 4px #fff;
+  flex:1;
 }
 #name{
   color:green;
@@ -43,7 +56,7 @@
   }
   .right{
     width:75%;
-    background-color:#5436;
+    background-color:#008080;
       }
 }@media only screen and (min-width:768px) and (max-width:1024px) {
   .main{
@@ -52,11 +65,11 @@
   }
   .left{
     width:25%;
-    background-color:#985;
+    background-color:#008080;
     }
     .right{
       width:70%;
-      background-color:#808000;
+      background-color:#008000;
         }
       }
 }@media only screen and (min-width:480px) and (max-width: 768px){
